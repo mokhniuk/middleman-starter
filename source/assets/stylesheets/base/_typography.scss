@@ -1,0 +1,87 @@
+// Titles
+
+h1,
+.h1 {
+  font-family: $serif;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+h2,
+.h2 {
+  font-family: $serif;
+  font-size: 2em;
+  line-height: 1.4em;
+  margin-bottom: 1.1em;
+}
+
+h3,
+.h3 {
+  font-family: $serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: 0.4em;
+}
+
+h4,
+.h4 {}
+
+h5,
+.h5 {}
+
+h6,
+.h6 {}
+
+
+
+// Text
+
+p {
+  font-family: $sans-serif;
+  text-align: left;
+  color: $dark;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+time {
+  color: rgba(0,0,0,.6);
+  font-family: $serif;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+
+
+
+// Links
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-bottom-color: transparent;
+  transition: all 0.24s ease;
+
+  &:hover {
+    color: $hover-color;
+    border-bottom-color: rgba($hover-color, .6);
+  }
+
+  &:active,
+  &:focus {}
+}
+
+
+
+// Divider
+
+hr {
+  border-bottom: 1px solid $light-gray;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}

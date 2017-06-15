@@ -1,0 +1,14 @@
+// Common layout elements
+
+.section {
+  display: block;
+  margin: 0;
+  padding: $big-spacing $side-spacing;
+  position: relative;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}

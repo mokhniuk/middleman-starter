@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <title><%= current_page.data.title || "Old Fashioned" %></title>
+
+    <!-- Your compiled CSS -->
+    <%= stylesheet_link_tag "site" %>
+
+    <!-- Metatags: https://megatags.co/ -->
+    <!-- Search Engine -->
+    <meta name="description" content="Page desription">
+    <meta name="image" content="//image.jpg">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Page Title">
+    <meta itemprop="description" content="Page desription">
+    <meta itemprop="image" content="//image.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page desription">
+    <meta name="twitter:site" content="@publisher">
+    <meta name="twitter:creator" content="@author">
+    <meta name="twitter:image:src" content="//placehold.it/1024x512">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Page Title">
+    <meta name="og:description" content="Page desription">
+    <meta name="og:image" content="//placehold.it/1200x630">
+    <meta name="og:url" content="//example.com">
+    <meta name="og:site_name" content="Site Name">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+
+    <!-- Favicons: http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial '/components/header' %>
+    <%= yield %>
+    <%= partial '/components/footer' %>
+    <%= javascript_include_tag "site" %>
+  </body>
+</html>
