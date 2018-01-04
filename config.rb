@@ -1,6 +1,11 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :livereload
+
+# https://middlemanapp.com/advanced/localization/
+activate :i18n
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -70,6 +75,8 @@ module WebsiteHelpers
     link_to(link_text, page_url, options)
 	 end
 end
+
+
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

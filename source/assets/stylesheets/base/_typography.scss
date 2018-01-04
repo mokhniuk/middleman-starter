@@ -60,14 +60,15 @@ time {
 
 a {
   color: $action-color;
-  text-decoration: none;
-  border-bottom: 1px solid;
-  border-bottom-color: transparent;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  // border-bottom: 1px solid;
+  // border-bottom-color: transparent;
   transition: all 0.24s ease;
 
   &:hover {
     color: $hover-color;
-    border-bottom-color: rgba($hover-color, .6);
+    // border-bottom-color: rgba($hover-color, .6);
   }
 
   &:active,
